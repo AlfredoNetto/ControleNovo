@@ -1,0 +1,26 @@
+program PRJControleNovo;
+
+uses
+  Forms,
+  UPrincipal in 'UPrincipal.pas' {FRMPrincipal},
+  UCadastrodeFornecedor in 'UCadastrodeFornecedor.pas' {Form1},
+  UCliente in 'UCliente.pas' {FRMCliente},
+  UEntrada in 'UEntrada.pas' {FRMEntrada},
+  UProduto in 'UProduto.pas' {FRMProduto},
+  URelatorioDeFornecedor in 'URelatorioDeFornecedor.pas' {FRMRelatorio},
+  USaida in 'USaida.pas' {Form2};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFRMPrincipal, FRMPrincipal);
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFRMCliente, FRMCliente);
+  Application.CreateForm(TFRMEntrada, FRMEntrada);
+  Application.CreateForm(TFRMProduto, FRMProduto);
+  Application.CreateForm(TFRMRelatorio, FRMRelatorio);
+  Application.CreateForm(TForm2, Form2);
+  Application.Run;
+end.

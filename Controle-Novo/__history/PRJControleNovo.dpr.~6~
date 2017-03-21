@@ -1,0 +1,20 @@
+program PRJControleNovo;
+
+uses
+  Forms,
+  UPrincipal in 'UPrincipal.pas' {FRMPrincipal},
+  UCadastrodeFornecedor in 'UCadastrodeFornecedor.pas' {Form1},
+  UCliente in 'UCliente.pas' {FRMCliente},
+  UEntrada in 'UEntrada.pas' {Form2};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFRMPrincipal, FRMPrincipal);
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFRMCliente, FRMCliente);
+  Application.CreateForm(TForm2, Form2);
+  Application.Run;
+end.

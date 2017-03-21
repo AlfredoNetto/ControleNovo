@@ -1,0 +1,113 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Tela Para Cadastro De Clientes'
+  ClientHeight = 216
+  ClientWidth = 511
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clBlack
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = [fsBold]
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 16
+  object Label2: TLabel
+    Left = 8
+    Top = 72
+    Width = 103
+    Height = 16
+    Caption = 'Nome do Cliente'
+    FocusControl = DBENome
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 8
+    Top = 136
+    Width = 43
+    Height = 16
+    Caption = 'Cidade'
+    FocusControl = DBECidade
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object DBENome: TDBEdit
+    Left = 8
+    Top = 97
+    Width = 321
+    Height = 24
+    DataField = 'NOME'
+    DataSource = DTSCliente
+    TabOrder = 0
+  end
+  object DBECidade: TDBEdit
+    Left = 8
+    Top = 158
+    Width = 321
+    Height = 24
+    DataField = 'CIDADE'
+    DataSource = DTSCliente
+    TabOrder = 1
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 0
+    Top = 0
+    Width = 511
+    Height = 49
+    DataSource = DTSCliente
+    VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbInsert, nbDelete, nbEdit, nbPost, nbCancel]
+    Align = alTop
+    Hints.Strings = (
+      'Primeiro registro'
+      'Registro anterior'
+      'Pr'#243'ximo registro'
+      #218'ltimo registro'
+      'Inserir registro'
+      'Excluir registro'
+      'Editar registro'
+      'Salvar registro'
+      'Cancelar edi'#231#227'o')
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 2
+    ExplicitLeft = -117
+    ExplicitWidth = 564
+  end
+  object QUECliente: TADOQuery
+    Connection = FRMPrincipal.DBPrincipal
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'SELECT*'
+      'FROM CLIENTE')
+    Left = 328
+    Top = 272
+    object QUEClienteCOD_CLIENTE: TAutoIncField
+      FieldName = 'COD_CLIENTE'
+      ReadOnly = True
+    end
+    object QUEClienteNOME: TStringField
+      FieldName = 'NOME'
+      Size = 50
+    end
+    object QUEClienteCIDADE: TStringField
+      FieldName = 'CIDADE'
+      Size = 30
+    end
+  end
+  object DTSCliente: TDataSource
+    DataSet = QUECliente
+    Left = 256
+    Top = 272
+  end
+end

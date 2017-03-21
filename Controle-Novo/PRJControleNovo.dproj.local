@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/05/20 13:44:52.553.pas,C:\Users\USUARIO\Documents\RAD Studio\Projects\Unit1.pas=C:\Controle-Novo\UPrincipal.pas</Transaction>
+    <Transaction>2013/05/20 13:44:52.553.dfm,C:\Users\USUARIO\Documents\RAD Studio\Projects\Unit1.dfm=C:\Controle-Novo\UPrincipal.dfm</Transaction>
+    <Transaction>2013/05/20 13:45:16.827.dproj,C:\Users\USUARIO\Documents\RAD Studio\Projects\Project1.dproj=C:\Controle-Novo\PRJControleNovo.dproj</Transaction>
+    <Transaction>2013/05/20 13:55:14.210.pas,C:\Controle-Novo\Unit1.pas=C:\Controle-Novo\UCadastrodeFornecedor.pas</Transaction>
+    <Transaction>2013/05/20 13:55:14.210.dfm,C:\Controle-Novo\Unit1.dfm=C:\Controle-Novo\UCadastrodeFornecedor.dfm</Transaction>
+    <Transaction>2013/05/20 13:58:15.148.pas,C:\Controle-Novo\Unit2.pas=C:\Controle-Novo\UCliente.pas</Transaction>
+    <Transaction>2013/05/20 13:58:15.148.dfm,C:\Controle-Novo\Unit2.dfm=C:\Controle-Novo\UCliente.dfm</Transaction>
+    <Transaction>2013/05/20 14:02:20.593.pas,C:\Controle-Novo\Unit2.pas=C:\Controle-Novo\UEntrada.pas</Transaction>
+    <Transaction>2013/05/20 14:02:20.593.dfm,C:\Controle-Novo\Unit2.dfm=C:\Controle-Novo\UEntrada.dfm</Transaction>
+    <Transaction>2013/05/20 14:04:39.616.pas,C:\Controle-Novo\Unit2.pas=C:\Controle-Novo\UProduto.pas</Transaction>
+    <Transaction>2013/05/20 14:04:39.616.dfm,C:\Controle-Novo\Unit2.dfm=C:\Controle-Novo\UProduto.dfm</Transaction>
+    <Transaction>2013/05/20 14:06:20.239.pas,C:\Controle-Novo\Unit3.pas=C:\Controle-Novo\URelatorioDeFornecedor.pas</Transaction>
+    <Transaction>2013/05/20 14:06:20.239.dfm,C:\Controle-Novo\Unit3.dfm=C:\Controle-Novo\URelatorioDeFornecedor.dfm</Transaction>
+    <Transaction>2013/05/20 14:11:49.474.pas,C:\Controle-Novo\Unit2.pas=C:\Controle-Novo\USaida.pas</Transaction>
+    <Transaction>2013/05/20 14:11:49.474.dfm,C:\Controle-Novo\Unit2.dfm=C:\Controle-Novo\USaida.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
